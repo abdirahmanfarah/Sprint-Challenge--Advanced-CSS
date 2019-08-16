@@ -4,27 +4,44 @@
   width:100%;
   background:@wild-sand;
   border:@sea-shell;
+
+  @media @phone {
+  width:100%;
+  background:@wild-sand;
+  border:@sea-shell;
+  }
  
   nav{
     width:80%;
     margin:33px auto 0px;
+    
+    @media @phone {
+      width:95%;
+      margin:33px auto 0px;
+    }
 
     h1{
       padding-top:10px;
       font-size: 4.4rem;
       .custom-layout(center, center)
+
+      // @phone {
+      //   padding-top:10px;
+      // font-size: 4.4rem;
+      // .custom-layout(center, center)
+      // }
     }
     .links{
       width:100%;
       font:@river-bend;
       .custom-layout(center, center);
+      }
       a {
         padding:20px;
        font-size:1.6rem;
        text-decoration: none;
-       color:black;
+       color:grey;
      }
    }
   }
  
-}
