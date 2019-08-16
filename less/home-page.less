@@ -2,6 +2,7 @@
 
 
   .home {
+
     @media @phone {
        width:100%;
      }
@@ -76,10 +77,10 @@
       justify-content: center;
   
       @media @phone {
-        width:90%;
-        flex-direction:column-reverse;
+        padding:20px;
         margin:auto;
-        padding:10px;
+        width:100%;
+        flex-direction:column-reverse;
         .custom-layout(center, center);
       }
   
@@ -101,7 +102,6 @@
           .btn(29%, @btn-bg-color);
           @media @phone {
             .btn(100%, @btn-bg-color);
-          }
         }
       }
   
@@ -110,17 +110,24 @@
         margin-left: 4%;
   
         @media @phone {
+          margin:20px;
           width:85%;
-          margin:auto;
-          padding:10px;
-  
-        }
-        
-        img {
-          width: 100%;
           height: auto;
           border-radius: 10px;
         }
+        }
+        
+        img {
+          @media @phone {
+            width:85%;
+
+          }
+           
+          width: 100%;
+          height: auto;
+          border-radius: 10px;
+        
       }
     }
+  }
   }// home
